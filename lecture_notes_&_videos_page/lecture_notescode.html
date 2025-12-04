@@ -38,28 +38,18 @@ tailwind.config = {
 </head>
 
 <body class="font-display bg-background-light dark:bg-background-dark text-[#1c0d10] dark:text-gray-200">
-<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
-<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/40 px-4 sm:px-6 lg:px-10 py-3">
-<div class="flex items-center gap-4">
-<div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-[#1c0d10] dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em]">Intro to Multimedia Systems</h2>
-</div>
-<div class="hidden md:flex flex-1 justify-end gap-8">
-<div class="flex items-center gap-9">
-<a class="text-[#1c0d10] dark:text-gray-200 text-sm font-medium leading-normal" href="../introduction_page2.html">Home</a>
-<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="./lecture_notescode.html">Lecture Notes &amp; Videos</a>
-<a class="text-[#1c0d10] dark:text-gray-200 text-sm font-medium leading-normal" href="../tests_&_assignments_page/tests.html">Tests</a>
-<a class="text-[#1c0d10] dark:text-gray-200 text-sm font-medium leading-normal" href="../about_us_page/code.html">Team Info</a>
-</div>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar with an abstract gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCc1PEarlDBQSUNAY7Wyy6R6XS_ViwucfJK4yDXyjFAOa16FX7JyuRK1YQndvLVd13PAi-Fjlap34j5J3PO5O9o5ecxClMxPkIRSmn39Gjx_07kZ2TJPIk2yFSovC_XmH0f2LSZvf1CWGAuJAqHdGkxS3CT43BFL5KfaL992Ke3wue5haPow1mqjuqvwd197W8lyGgDyvFryCMco_A4JE9BZTtIrdvHTA1qa2T_b2U-TKO42zEf2TX1z5iDRCBdHfx0cfG3cvLIUwSv");'></div>
-</div>
+
+<div class="relative flex min-h-screen w-full flex-col">
+
+<header class="flex items-center justify-between border-b border-primary/20 dark:border-primary/40 px-6 py-4">
+    <div class="flex items-center gap-4">
+        <div class="size-6 text-primary">
+            <svg fill="none" viewBox="0 0 48 48">
+                <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        <h2 class="text-lg font-bold">Intro to Multimedia Systems</h2>
+    </div>
 </header>
 
 <main class="px-6 py-8 max-w-3xl mx-auto flex flex-col gap-10">
@@ -82,6 +72,12 @@ tailwind.config = {
         <!-- LECTURE NOTES -->
         <h3 class="text-xl font-bold pb-3">Lecture Notes</h3>
         <p class="pb-3 text-base">View the lecture notes below or download them.</p>
+
+        <div class="w-full h-96 bg-gray-200 dark:bg-gray-800 rounded-lg border border-primary/20 dark:border-primary/40 overflow-hidden">
+            <a href="./multimedia/Chapter_1_Introduction_to_Multimedia.pptx" download>
+                <img src="./multimedia/chapter.jpeg" class="w-full h-full object-cover rounded-lg" alt="Chapter 1 Thumbnail" />
+            </a>
+        </div>
 
         <a
             href="./multimedia/Chapter_1_Introduction_to_Multimedia.pptx"
