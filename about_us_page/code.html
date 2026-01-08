@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Us Page</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<style>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Us Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <style>
         .material-symbols-outlined {
             font-variation-settings:
             'FILL' 0,
@@ -18,199 +18,175 @@
             'opsz' 24
         }
     </style>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#f20d33",
-              "background-light": "#fcf8f9",
-              "background-dark": "#1c0d10",
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d33",
+                        "background-light": "#fcf8f9",
+                        "background-dark": "#1c0d10",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
             },
-            fontFamily: {
-              "display": ["Lexend", "sans-serif"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-          },
-        },
-      }
+        }
     </script>
 </head>
 <body class="font-display">
-<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
-<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 px-4 sm:px-10 py-3">
-<div class="flex items-center gap-4 text-slate-900 dark:text-white">
-<div class="size-4 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Multimedia Systems</h2>
-</div>
-<div class="hidden md:flex flex-1 justify-end gap-8">
-<div class="flex items-center gap-9">
-<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal" href="../introduction_page2.html">Home</a>
-<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal" href="../lecture_notes_&_videos_page/lecture_notescode.html">Lectures</a>
-<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal" href="../tests_&_assignments_page/tests.html">Tests</a>
-<a class="text-primary text-sm font-bold leading-normal" href="./code.html">About Us</a>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">Login</span>
-</button>
-</div>
-</header>
-<main class="flex flex-col gap-12">
-<div class="flex flex-wrap justify-between gap-3 p-4 pt-12">
-<p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Meet the Team</p>
-</div>
-<section>
-<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Lecturers</h2>
-<div class="flex flex-col gap-4">
-<div class="p-4">
-<div class="flex flex-col md:flex-row items-stretch justify-between gap-8 rounded-lg">
-<div class="flex flex-[2_2_0px] flex-col gap-4">
-<div class="flex flex-col gap-1">
-<p class="text-primary/80 dark:text-primary/90 text-sm font-normal leading-normal">Professor | Course Coordinator</p>
-<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Dr. Eleanor Vance</p>
-<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">
-                                                    Dr. Vance is an expert in digital signal processing and interactive media. Her research focuses on the human-computer interaction paradigms in virtual reality.
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 px-4 sm:px-10 py-3">
+                        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+                            <div class="size-4 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Multimedia Systems</h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-slate-900 dark:text-white text-sm font-medium leading-normal" href="#">Home</a>
+                                <a class="text-slate-900 dark:text-white text-sm font-medium leading-normal" href="#">Lectures</a>
+                                <a class="text-slate-900 dark:text-white text-sm font-medium leading-normal" href="#">Tests</a>
+                                <a class="text-primary text-sm font-bold leading-normal" href="#">About Us</a>
+                            </div>
+                            
+                        </div>
+                    </header>
+                    <main class="flex flex-col gap-12">
+                        <div class="flex flex-wrap justify-between gap-3 p-4 pt-12">
+                            <p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Meet the Team</p>
+                        </div>
+                        <section>
+                            <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Lecturer</h2>
+                            <div class="flex flex-col gap-4">
+                                <div class="p-4">
+                                    <div class="flex flex-col md:flex-row items-stretch justify-between gap-8 rounded-lg">
+                                        <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                            <div class="flex flex-col gap-1">
+                                                <p class="text-primary/80 dark:text-primary/90 text-sm font-normal leading-normal">Professor | Course Coordinator</p>
+                                                <p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Mrs. Omirinlewo Yinka</p>
+                                                <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">
+                                                    Mrs. Omirinlewo is an expert in digital signal processing and interactive media. Her research focuses on the human-computer interaction paradigms in virtual reality.
                                                 </p>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-primary/20 dark:bg-primary/30 text-slate-900 dark:text-white pr-2 gap-1 text-sm font-medium leading-normal w-fit">
-<span class="material-symbols-outlined text-base">play_circle</span>
-<span class="truncate">Listen to Intro</span>
-</button>
-</div>
-<div class="w-full md:w-auto bg-center bg-no-repeat aspect-square md:aspect-video bg-cover rounded-xl flex-1" data-alt="Profile photo of Dr. Eleanor Vance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfi5uWUgdKlEltzbHwU-IUbWVCMOH3R5SmcawLcBG6wa4nvnS2IT6tvAG-iUjVFAmp0llW_RUKUmhC4B2z4tW_3UOakoBHcgRJpL_uSt3mG4-F9fp0fBawG4FayozojCsw5fdkw48_2Qe0XWDa0sQ1GCpAVGt1iQ_Qc3jls0OVLiN2Z_SDMUrz3QEcurNu2qrfCjz2JUiibACB0r94jQT636x_uJZM1EB1eyL9gvoTzdW5UexvjVQnjF-pv3KOJUBz-2jriIV1gNW-");'></div>
-</div>
-</div>
-<div class="p-4">
-<div class="flex flex-col md:flex-row items-stretch justify-between gap-8 rounded-lg">
-<div class="flex flex-[2_2_0px] flex-col gap-4">
-<div class="flex flex-col gap-1">
-<p class="text-primary/80 dark:text-primary/90 text-sm font-normal leading-normal">Associate Lecturer</p>
-<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Mr. Ben Carter</p>
-<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">
-                                                    Mr. Carter specializes in 3D modeling and animation. He brings over a decade of industry experience from the animation and visual effects sector into the classroom.
-                                                </p>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-primary/20 dark:bg-primary/30 text-slate-900 dark:text-white pr-2 gap-1 text-sm font-medium leading-normal w-fit">
-<span class="material-symbols-outlined text-base">play_circle</span>
-<span class="truncate">Listen to Intro</span>
-</button>
-</div>
-<div class="w-full md:w-auto bg-center bg-no-repeat aspect-square md:aspect-video bg-cover rounded-xl flex-1" data-alt="Profile photo of Mr. Ben Carter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR5LuZtX0SU6j56_Dc_Vamqg0KxWJdzcGEPJcOGivos7EQV0-PDttWPYTtLUb6iJmDOo9T_9ac-oN2GzRQxr7zmiHbNEh9woBlgCnyBxRNZS_oO__X8ObVhcBWBkg7gqtZUa7umOdPFhnJl3F18m5JdXndqQ9dX8PtCK_tg0GwoluNAU9DkPMY70H9Yx337ZBVaDO_x48L0TBkpYIdS9F1TH7AECVCNGZIXINTOntVXJpOCANcN2r9Y-tf0DWbG8y4bCaJBbvbMosW");'></div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">The Student Development Team</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
-<div class="group relative overflow-hidden rounded-xl">
-<img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of James Williams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE2yvS45_-qDZFV9Fv3DcasCB_UycNUuh10nYxov9b4alvHVcrLcitcqKIo3ZxLILWvRb_aNhq0UFfWSTDSgovjsYFI9vyqoTG4TZDM6B80hUcLsmAe1L4D1KYXXqUhpx73MhUB46vdFQVYr-9ixP8Rm-tsrKYjiIByrJS6ssEtT8vDDAZFRQOC7VuSY5xM_3HLGRSiH4vVJ4iSPfu15cdsQUuyy0WlEB_9gOYTgVlilbIe1yc7dlOMAjaSfR-BLQ4R5D2BeBus5Vo"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-4">
-<p class="text-white font-bold">James Williams</p>
-<p class="text-white/80 text-sm">Group Leader</p>
-</div>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-<p class="text-sm italic">"The only way to do great work is to love what you do."</p>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-xl">
-<img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Sarah Chen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP-oFpfI9XkdG6vLNLJ0GMGEAjQ7QViueFZN9q8g4rzNvkCxJxyJlsPfZoJonsEb5acbAqberI2nVsYlHU1MVU53Z1o6bpt31C0kGlgaHDf0zod5KDgZwr01MGO3UUsgU9uUn2BL76iJ0EQNAhqdXx1JSdca0J70nQqObRP439X0gNWNEYQ-2cx146mRR1hGg-QAusZU2k8AMY1ithQUg7T2Cm_nIkeQf9lUYs8O222KE-04vNMZU_LvdgrQXlAkrqq-cPafgoUNDt"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-4">
-<p class="text-white font-bold">Sarah Chen</p>
-<p class="text-white/80 text-sm">Frontend Developer</p>
-</div>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-<p class="text-sm">Hobby: Landscape Photography</p>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-xl">
-<img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Michael Rodriguez" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpjwbujClqzY3Pd3woGcxEN0L_-h8YEXTTn7eQv5DR2-fk2DXILWJgCFyEJnUwR5KlZhCRiC8cO3eBDGnAu-1GdIk5E43SqmHKiATbsFaMFHUlGNtpkI2hs2TwZBo90NV4vVY5ljWV7PTZW7-aAwW-2N5HajxlrjWF6gi2SQ9rDqVFrp2VAHqMhQEm0qeEnW9bAdewsIm9sQQIY3yQ-HxBVQO7a1N4vRBIRy99g5r4FtnHoWDUkdHLyBCOcFXyVfyst0SqvHG6_1_4"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-4">
-<p class="text-white font-bold">Michael Rodriguez</p>
-<p class="text-white/80 text-sm">Backend Developer</p>
-</div>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-<p class="text-sm italic">"Code is like humor. When you have to explain it, it’s bad."</p>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-xl">
-<img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Emily Johnson" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf-oqzuF1MkW4-eygE9ZYtEjADcwGhUZjcwDI9GL31VxxZYCYFeK6eJKBCMDvcCQPMpN-Y37iG_HZdkQXcn_QRMQvoX2PeKXrUfl-lTF72dw2a870prd1xbE-xuYrqv1XBgiS_8PszWS_wn034EBBIk5o5U3hNUbTl3zZ3cLZ6itTCQntrR0lXOpGcpzUvi0VEDy929iRgLud6lXJSKYj4P9MwVgAA73DnOuwcUHBhvUxgnk0FCzHrENGcBR8mo5LiEHP9F3xfaQ9a"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-4">
-<p class="text-white font-bold">Emily Johnson</p>
-<p class="text-white/80 text-sm">UI/UX Designer</p>
-</div>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-<p class="text-sm">Hobby: Digital Painting</p>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-xl">
-<img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of David Lee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALh1cKoDCt0NRjc8bp0OTeTK14m31Lh5cwVTGgleW7EBM6s2C88BiqQuETETkpU_Cw44H9Pmuxb4moHdKVXIEYaEK5CfQi7WoqNy1TVqKFLzyYqUnlQB3FmB-u0syodOGcYH1i64QDp1QBounOPXCgXnprhBUiW9TGJ5U8qcIhXJRXuQmLuehHBK17pU41hf9BCdtY1txAzP1pPkmYSj_3_d4YYV2b6A9vhiXBe7qr2YrNthHffCjoOyBJ4N76-hUHGNERYu6VGqnQ"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-4">
-<p class="text-white font-bold">David Lee</p>
-<p class="text-white/80 text-sm">Content Creator</p>
-</div>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-<p class="text-sm">Hobby: Playing Guitar</p>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-xl">
-<img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Jessica Brown" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAByUFNMQbYXs4kO_l4xmBfUe_WumnaeQvQMQuUG3mB6v_HWX91_nqAayflOXlDU0gO2NbjbP9Gt0kFnfgALpLlaNIOHyyD4Or_MlAr_JW0j4ENXjyay2iL6ME66bBB11z2JJhBe9zHVt10SNv6f8hUqHPbv2N03s8oYUkKBWPpafepSOx8gwHx6A-o76ax-ijeY5Euw_HLh6XH8qDxD2COwkw13wghpZRdv9fbwHIc8BlLeJPDZWBH4_6yqUq9lN-6vrjJ5d6dbJlC"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-4">
-<p class="text-white font-bold">Jessica Brown</p>
-<p class="text-white/80 text-sm">Project Manager</p>
-</div>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-<p class="text-sm italic">"Simplicity is the ultimate sophistication."</p>
-</div>
-</div>
-</div>
-</section>
-<section class="pb-12">
-<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Tools &amp; Technologies</h2>
-<div class="flex items-center justify-center md:justify-start flex-wrap gap-8 p-4">
-<div class="flex flex-col items-center gap-2 text-center">
-<img class="h-12 w-12" data-alt="Adobe Photoshop Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm0JyqjA9KFN55qtPvnjvROlnf_KkvcZqlUsOrBONHYTWKL2nWT4u16_i7qcCMbwvyp0XU-Z_Wb4CAfKtNEd2OxHEHzxNzhW4d19paPronyGlglEpav-QeVHAUMapFA2Ef0MCK-nfY8iN3e2cXg14j_aHxTdyYTSId_zPDTYBDxLUNHvOAcJBTFGv_fonkDjcv0I5ojQC2-ugliASLZwNQDj18saYnOMNcbJjkHGaKLE0gGIPjfJwa0ZwuHRHl8LsdB2CrltKA-D03"/>
-<p class="text-sm text-slate-600 dark:text-slate-400">Photoshop</p>
-</div>
-<div class="flex flex-col items-center gap-2 text-center">
-<img class="h-12 w-12" data-alt="Adobe Premiere Pro Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHCudTp6FgdjYFb3m1nB0PzbxBhaLbug3YRTHyfn_Ru_jJe5DEOkxBXzqTCSe4chhJtDDC6ryW-ZQ7g5wDvqDFDs58T4mNgFMDYAU1VEVftbsq-KhiQxJLNzZz-kJeJEhGLZy9jI_0AdSzU0YBQOg8Ya2J6WnEqyg6VWQIhGX-IaMviZJfoxhiM4Dgapmu5tAJygPf3gReJl5OVZlcZlKVTBYkzYHTvlaLOGaSjzjmi65akMLTa1T_hsVbnd2OUtd69kAXIlIHi_T"/>
-<p class="text-sm text-slate-600 dark:text-slate-400">Premiere Pro</p>
-</div>
-<div class="flex flex-col items-center gap-2 text-center">
-<img class="h-12 w-12" data-alt="Figma Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzQduh-A0B_nEpiyB-9TQae6A30MUxS2dp4oIqUnI40W13Jp11epJMQWbO09-hRHAV9ul6QOQ1OdHcJbNqLLA3uD9pMnPAZsiXccL-lMmXy1qo8KcupxJedpgUgv7J7CVV9CISw2YIESxqbZyXdtCUfRGIR7kLI_dC8FhQQDehSHwVi7ZVoXR_MSlbMzJ8uYaE45DNUsRQiZREjx3TykqdWfHchyoE4mNtzbNYxIlY236cyIXX-iI3PpYrxjZ6OJ2_lL80MHiC61fM"/>
-<p class="text-sm text-slate-600 dark:text-slate-400">Figma</p>
-</div>
-<div class="flex flex-col items-center gap-2 text-center">
-<img class="h-12 w-12" data-alt="HTML5 Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVOVi449rpn6ZnZehfqVGnGmd-wBOfI22rDrjHftCF8KtjAkeq4YZZ9r0dInICIJnBXF5Io8-ODaOT1i7m3qiojE8XGRa3AntHSDrYE22q64U7S7S2lyLyEyIJiCOr7WPySUOTwirvcZuKpSDtkUrn94QN72pZTSQpt-GIIc8yrFVmcEKI1UNW06R_-6Un3wmj_5S-6Uw5KTSfweYnfcRy2yG3KXGy-x6GuH4Jc5uC-CNg_XDMCi5St4_CZuDZy7Vdy5iH0fYAZX1_"/>
-<p class="text-sm text-slate-600 dark:text-slate-400">HTML5</p>
-</div>
-<div class="flex flex-col items-center gap-2 text-center">
-<img class="h-12 w-12" data-alt="CSS3 Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2vK7b_FB-K4hu4DvjgnbNpZQISBQfzm-VH5szsYalCgQpegHmc-Cv_XXa8AFjk5sc8WrxAfxpqFxRY69fKvbVsp9-YoMvI5zwXREo1wLuopKme-U88p5y-k9SEy-Jq5AK58Q_BEh_FU5yGHiEQnXw0f8EvVtIzlxOCE-KAgegp_BBjBgW7958EG7uxJ7u5zvnDqWXhegqKdXN2UBsvpGeuXYAyG4p1VLFfKn4SOhzttA8GgjRu6SPYUxG2c01yNDyS-7h3wOy0Vkq"/>
-<p class="text-sm text-slate-600 dark:text-slate-400">CSS3</p>
-</div>
-<div class="flex flex-col items-center gap-2 text-center">
-<img class="h-12 w-12 object-contain" data-alt="JavaScript Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh0z7BsFfrASXNhgrhukFXi2bqANfMXxAt-eqzFUTN6k1FWtJNsKG70CIM2g7h2P-2y-YV3nni1TyCu6gOvmj4Jyc0YmgcBJIyq1R86fiZyunuVhymhVbldGuwmED_p7A8sh_NHjXORSqhyKpBydyQ22MqeUm_5_omLslvfr8xt6Hb_4Aobg1uwfks2pNAR2fA4rZy2ZkfAraYANsmGc6O2cL7v1vwKaDYV8pE9AGwEBDydcY7wHOWe24Ut5h8nki_rw02IkOiCjPA"/>
-<p class="text-sm text-slate-600 dark:text-slate-400">JavaScript</p>
-</div>
-</div>
-</section>
-</main>
-</div>
-</div>
-</div>
-</div>
-</body></html>
+                                            </div>
+                                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-primary/20 dark:bg-primary/30 text-slate-900 dark:text-white pr-2 gap-1 text-sm font-medium leading-normal w-fit">
+                                                <span class="material-symbols-outlined text-base">play_circle</span>
+                                                <span class="truncate">Listen to Intro</span>
+                                            </button>
+                                        </div>
+                                        <div class="w-full md:w-auto bg-center bg-no-repeat aspect-square md:aspect-video bg-cover rounded-xl flex-1" data-alt="Profile photo of Dr. Eleanor Vance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfi5uWUgdKlEltzbHwU-IUbWVCMOH3R5SmcawLcBG6wa4nvnS2IT6tvAG-iUjVFAmp0llW_RUKUmhC4B2z4tW_3UOakoBHcgRJpL_uSt3mG4-F9fp0fBawG4FayozojCsw5fdkw48_2Qe0XWDa0sQ1GCpAVGt1iQ_Qc3jls0OVLiN2Z_SDMUrz3QEcurNu2qrfCjz2JUiibACB0r94jQT636x_uJZM1EB1eyL9gvoTzdW5UexvjVQnjF-pv3KOJUBz-2jriIV1gNW-");'></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </section>
+                        <section>
+                            <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">The Student Development Team</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+                                <div class="group relative overflow-hidden rounded-xl">
+                                    <img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of James Williams" src="../media pics/WhatsApp Image 2025-12-02 at 12.41.32_159da0dc.jpg"/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-4">
+                                        <p class="text-white font-bold">James Williams</p>
+                                        <p class="text-white/80 text-sm">Group Leader</p>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <p class="text-sm italic">"The only way to do great work is to love what you do."</p>
+                                    </div>
+                                </div>
+                                <div class="group relative overflow-hidden rounded-xl">
+                                    <img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Sarah Chen" src="../media pics/WhatsApp Image 2025-12-02 at 12.41.40_7359a9c6.jpg">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-4">
+                                        <p class="text-white font-bold">Sarah Chen</p>
+                                        <p class="text-white/80 text-sm">Frontend Developer</p>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <p class="text-sm">Hobby: Landscape Photography</p>
+                                    </div>
+                                </div>
+                                <div class="group relative overflow-hidden rounded-xl">
+                                    <img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Michael Rodriguez" src="../media pics/WhatsApp Image 2025-12-04 at 11.27.49_63770974.jpg"/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-4">
+                                        <p class="text-white font-bold">Michael Rodriguez</p>
+                                        <p class="text-white/80 text-sm">Backend Developer</p>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <p class="text-sm italic">"Code is like humor. When you have to explain it, it’s bad."</p>
+                                    </div>
+                                </div>
+                                <div class="group relative overflow-hidden rounded-xl">
+                                    <img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Emily Johnson" src="../media pics/WhatsApp Image 2025-12-04 at 16.33.36_4a0dac8d.jpg"/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-4">
+                                        <p class="text-white font-bold">Emily Johnson</p>
+                                        <p class="text-white/80 text-sm">UI/UX Designer</p>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <p class="text-sm">Hobby: Digital Painting</p>
+                                    </div>
+                                </div>
+                                <div class="group relative overflow-hidden rounded-xl">
+                                    <img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of David Lee" src="../media pics/WhatsApp Image 2025-12-04 at 16.33.38_a3927f5c.jpg"/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-4">
+                                        <p class="text-white font-bold">David Lee</p>
+                                        <p class="text-white/80 text-sm">Content Creator</p>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <p class="text-sm">Hobby: Playing Guitar</p>
+                                    </div>
+                                </div>
+                                <div class="group relative overflow-hidden rounded-xl">
+                                    <img class="h-full w-full object-cover aspect-square" data-alt="Profile photo of Jessica Brown" src="../media pics/WhatsApp Image 2025-12-09 at 12.43.24_316359a0.jpg    "/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-4">
+                                        <p class="text-white font-bold">Jessica Brown</p>
+                                        <p class="text-white/80 text-sm">Project Manager</p>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-primary/80 p-4 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                        <p class="text-sm italic">"Simplicity is the ultimate sophistication."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="pb-12">
+                            <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Tools & Technologies</h2>
+                            <div class="flex items-center justify-center md:justify-start flex-wrap gap-8 p-4">
+                            
+                              
+                                <div class="flex flex-col items-center gap-2 text-center">
+                                    <img class="h-12 w-12" data-alt="Figma Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzQduh-A0B_nEpiyB-9TQae6A30MUxS2dp4oIqUnI40W13Jp11epJMQWbO09-hRHAV9ul6QOQ1OdHcJbNqLLA3uD9pMnPAZsiXccL-lMmXy1qo8KcupxJedpgUgv7J7CVV9CISw2YIESxqbZyXdtCUfRGIR7kLI_dC8FhQQDehSHwVi7ZVoXR_MSlbMzJ8uYaE45DNUsRQiZREjx3TykqdWfHchyoE4mNtzbNYxIlY236cyIXX-iI3PpYrxjZ6OJ2_lL80MHiC61fM"/>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">Figma</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 text-center">
+                                    <img class="h-12 w-12" data-alt="HTML5 Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVOVi449rpn6ZnZehfqVGnGmd-wBOfI22rDrjHftCF8KtjAkeq4YZZ9r0dInICIJnBXF5Io8-ODaOT1i7m3qiojE8XGRa3AntHSDrYE22q64U7S7S2lyLyEyIJiCOr7WPySUOTwirvcZuKpSDtkUrn94QN72pZTSQpt-GIIc8yrFVmcEKI1UNW06R_-6Un3wmj_5S-6Uw5KTSfweYnfcRy2yG3KXGy-x6GuH4Jc5uC-CNg_XDMCi5St4_CZuDZy7Vdy5iH0fYAZX1_"/>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">HTML5</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 text-center">
+                                    <img class="h-12 w-12" data-alt="CSS3 Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2vK7b_FB-K4hu4DvjgnbNpZQISBQfzm-VH5szsYalCgQpegHmc-Cv_XXa8AFjk5sc8WrxAfxpqFxRY69fKvbVsp9-YoMvI5zwXREo1wLuopKme-U88p5y-k9SEy-Jq5AK58Q_BEh_FU5yGHiEQnXw0f8EvVtIzlxOCE-KAgegp_BBjBgW7958EG7uxJ7u5zvnDqWXhegqKdXN2UBsvpGeuXYAyG4p1VLFfKn4SOhzttA8GgjRu6SPYUxG2c01yNDyS-7h3wOy0Vkq"/>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">CSS3</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 text-center">
+                                    <img class="h-12 w-12 object-contain" data-alt="JavaScript Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh0z7BsFfrASXNhgrhukFXi2bqANfMXxAt-eqzFUTN6k1FWtJNsKG70CIM2g7h2P-2y-YV3nni1TyCu6gOvmj4Jyc0YmgcBJIyq1R86fiZyunuVhymhVbldGuwmED_p7A8sh_NHjXORSqhyKpBydyQ22MqeUm_5_omLslvfr8xt6Hb_4Aobg1uwfks2pNAR2fA4rZy2ZkfAraYANsmGc6O2cL7v1vwKaDYV8pE9AGwEBDydcY7wHOWe24Ut5h8nki_rw02IkOiCjPA"/>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">JavaScript</p>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
