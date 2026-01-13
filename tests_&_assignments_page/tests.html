@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +10,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-        rel="stylesheet"
-    />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet"
-    />
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="../script.js"></script>
 
 
     <style>
@@ -28,31 +24,32 @@
     </style>
 </head>
 
-<body
-    class="bg-background-light dark:bg-background-dark font-display text-[#1c0d10] dark:text-[#fcf8f9]">
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1c0d10] dark:text-[#fcf8f9]">
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
             <!-- Header -->
             <header
-                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 px-6 sm:px-10 lg:px-20 py-3 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-50"
-            >
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 px-10 py-5 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-50">
                 <div class="flex items-center gap-4">
-                   <div class="size-6 text-primary">
-                                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
-                                    </svg>
-                                </div>
+                    <div class="size-6 text-primary">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
                     <h2 class="text-lg font-bold">Multimedia Systems</h2>
                 </div>
-                 <nav class="flex flex-1 justify-end">
-                                <div class="flex items-center gap-9">
-                                <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary" href="../introduction_page2.html">Home</a>
-                                <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary" href="../lecture_notes_&_videos_page/lecture_notescode.html">Lectures</a>
-                                <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary" href="./tests.html">Tests and Assignments</a>
-                                <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary" href="../about_us_page/code.html">About Us</a>
-                                </div>
-                            </nav>
-                </div>
+                <nav class="flex flex-1 justify-end">
+                    <div class="flex items-center gap-9">
+                        <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                            href="../index.html">Home</a>
+                        <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                            href="../lecture_notes_&_videos_page/lecture_notescode.html">Lectures</a>
+                        <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                            href="./tests.html">Tests</a>
+                        <a class="text-sm font-medium leading-normal text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                            href="../about_us_page/code.html">About Us</a>
+                    </div>
+                </nav>
             </header>
 
             <!-- Main Content -->
@@ -70,95 +67,119 @@
                         </div>
                         <!-- Test card -->
                         <div class="space-y-6" id="tests-container">
-                            <div class="bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/10 dark:border-primary/20">
+                            <div
+                                class="bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/10 dark:border-primary/20">
                                 <div class="flex flex-col md:flex-row items-stretch justify-between gap-6">
                                     <div class="flex flex-col gap-4 flex-[2_2_0px]">
                                         <div class="flex flex-col gap-1">
                                             <p class="text-lg font-bold">Test question</p>
                                         </div>
-                                        <button
-                                            class="flex min-w-[84px] h-9 items-center justify-center gap-2 flex-row-reverse rounded-lg px-4 pr-2 bg-[#f4e7e9] dark:bg-primary/20 text-[#1c0d10] dark:text-[#fcf8f9] text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30"
-                                            style="background-color: red; color:white"
-                                            id="View-tests"
-                                        >
+                                        <a href="test-question.html"
+                                            class="flex min-w-[84px] h-9 items-center justify-center gap-2 flex-row-reverse rounded-lg px-4 pr-2 bg-[#f4e7e9] dark:bg-primary/20 text-[#1c0d10] dark:text-[#fcf8f9] text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-transform hover:scale-105"
+                                            style="background-color: red; color:white" id="View-tests">
                                             <span class="material-symbols-outlined text-lg">
                                                 arrow_forward
                                             </span>
                                             View tests
-                                        </button>
+                                        </a>
                                     </div>
 
-                                    <div
-                                        class="w-full md:w-auto bg-center bg-cover aspect-video rounded-lg flex-1"
+                                    <div class="w-full md:w-auto bg-center bg-cover aspect-video rounded-lg flex-1"
                                         data-alt="Abstract graphic representing audio waves"
-                                        style="background-image: url(Test\ image\ 2.avif);"
-                                    ></div>
+                                        style="background-image: url('media_files/Test image 2.avif');"></div>
                                 </div>
                             </div>
 
                             <!-- Assignment card -->
-                            <div class="bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/10 dark:border-primary/20" id="Assignment-container">
+                            <div class="bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/10 dark:border-primary/20"
+                                id="Assignment-container">
                                 <div class="flex flex-col md:flex-row items-stretch justify-between gap-6">
                                     <div class="flex flex-col gap-4 flex-[2_2_0px]">
                                         <div class="flex flex-col gap-1">
                                             <p class="text-lg font-bold">Assignment</p>
                                         </div>
 
-                                        <button
-                                            class="flex min-w-[84px] h-9 items-center justify-center gap-2 flex-row-reverse rounded-lg px-4 pr-2 bg-primary text-white text-sm font-medium"
-                                            id="View-assignments"
-                                        >
+                                        <a href="view-assignment.html"
+                                            class="flex min-w-[84px] h-9 items-center justify-center gap-2 flex-row-reverse rounded-lg px-4 pr-2 bg-primary text-white text-sm font-medium transition-transform hover:scale-105"
+                                            id="View-assignments">
                                             <span class="material-symbols-outlined text-lg">
                                                 arrow_forward
                                             </span>
                                             <span class="truncate">View Assignment</span>
-                                        </button>
+                                        </a>
                                     </div>
 
-                                    <div
-                                        class="w-full md:w-auto bg-center bg-cover aspect-video rounded-lg flex-1"
+                                    <div class="w-full md:w-auto bg-center bg-cover aspect-video rounded-lg flex-1"
                                         data-alt="Image of a sound mixing console"
-                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1fQ7xr14LMi94S4qADq3tQuDdpLmNx5FbIFW8UARbaOrxeEeoVlj6F8sOq9icf0B5jOgyRwqAIqSh_TZAxT-4ikK2fkXgKP7hmZagSebQ_XznXShQ_6E55MleJwuRD1U2TsvAk7yoYRQQry74CfxUdHVXBDhrh5jUty-MTmwSzmOPNSlo1zsDqRwsbOXp3sWfEFOErgLToAVJCVs2O-q5fAPF8qyoqcwuX2Y02qRRILDJ6zD3oWxqyqoqIIRZCiKPBx5hbNpROyzP");'
-                                    ></div>
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1fQ7xr14LMi94S4qADq3tQuDdpLmNx5FbIFW8UARbaOrxeEeoVlj6F8sOq9icf0B5jOgyRwqAIqSh_TZAxT-4ikK2fkXgKP7hmZagSebQ_XznXShQ_6E55MleJwuRD1U2TsvAk7yoYRQQry74CfxUdHVXBDhrh5jUty-MTmwSzmOPNSlo1zsDqRwsbOXp3sWfEFOErgLToAVJCVs2O-q5fAPF8qyoqcwuX2Y02qRRILDJ6zD3oWxqyqoqIIRZCiKPBx5hbNpROyzP");'>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Right Sidebar -->
-                        <aside class="space-y-8 lg:sticky top-28 h-fit">
-                            <!-- Upcoming deadlines -->
-                            <div class="bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/10 dark:border-primary/20 space-y-4">
-                                <h3 class="text-lg font-bold">Upcoming Deadlines</h3>
+                    <aside class="space-y-8 lg:sticky top-28 h-fit">
+                        <!-- Upcoming deadlines -->
+                        <div
+                            class="bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/10 dark:border-primary/20 space-y-4">
+                            <h3 class="text-lg font-bold">Upcoming Deadlines</h3>
 
-                                <ul class="space-y-4">
-                                    <!-- Examination -->
-                                    <li class="flex items-start gap-4">
-                                        <div class="flex-shrink-0 size-10 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-primary">quiz</span>
-                                        </div>
-                                        <div>
-                                            <p class="font-medium text-sm">Examination</p>
-                                            <p class="text-xs text-yellow-600 dark:text-yellow-400" id="examDue"></p>
-                                        </div>
-                                    </li>
+                            <ul class="space-y-4">
+                                <!-- Examination -->
+                                <li class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 size-10 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary">quiz</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-sm">Examination</p>
+                                        <p class="text-xs text-yellow-600 dark:text-yellow-400" id="examDue"></p>
+                                    </div>
+                                </li>
 
-                                    <!-- Project Submission -->
-                                    <li class="flex items-start gap-4">
-                                        <div class="flex-shrink-0 size-10 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-primary">assignment</span>
-                                        </div>
-                                        <div>
-                                            <p class="font-medium text-sm">Project Submission</p>
-                                            <p class="text-xs text-yellow-600 dark:text-yellow-400" id="projectDue"></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </aside>
+                                <!-- Project Submission -->
+                                <li class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 size-10 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary">assignment</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-sm">Project Submission</p>
+                                        <p class="text-xs text-yellow-600 dark:text-yellow-400" id="projectDue"></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
                 </div>
             </main>
+            <footer class="mt-auto border-t border-primary/20 bg-background-light dark:bg-background-dark">
+                <div class="mx-auto max-w-7xl px-6 py-8">
+                    <div
+                        class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 text-black/70 dark:text-white/70">
+                        <div class="text-center sm:text-left">
+                            <p class="font-bold">CIT412 - Multimedia Systems</p>
+                            <p>Department of Information Technology, TU & NACOS</p>
+                        </div>
+                        <div class="text-center sm:text-right">
+                            <p>Academic Year: 2025/2026</p>
+                            <p>Contact:
+                                <a href="https://trinityuniversity.edu.ng/" class="hover:text-primary">
+                                    trinityuniversity.edu.ng
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <p
+                        class="mt-8 border-t border-primary/10 pt-8 text-center text-xs text-black/50 dark:text-white/50">
+                        © 2025 Course Platform. Design by 400 level IT Team. All rights reserved.
+                    </p>
+                </div>
+            </footer>
         </div>
     </div>
-    <script src="tests.js"></script>
+    <script src="../script.js"></script>
+
 </body>
+
 </html>
