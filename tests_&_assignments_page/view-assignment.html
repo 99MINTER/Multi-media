@@ -114,15 +114,15 @@
                                         </div>
 
                                         <div class="flex gap-3">
-                                            <a href="media_files/ASSIGNMENT QUESTUIONS.docx" download
+                                            <a href="media_files/Assignment_Questions.png" download
                                                 class="flex min-w-[84px] h-9 items-center justify-center gap-2 flex-row-reverse rounded-lg px-4 pr-2 bg-primary text-white text-sm font-medium transition-transform hover:scale-105"
                                                 id="Download-1">
                                                 <span class="material-symbols-outlined">download</span>
-                                                Download
+                                                PNG Download
                                             </a>
 
                                             <!-- Open button enabled -->
-                                            <a href="media_files/ASSIGNMENT QUESTIONS.PNG" target="_blank"
+                                            <a href="media_files/Assignment_Questions.png" target="_blank"
                                                 class="flex min-w-[84px] h-9 items-center justify-center gap-2 flex-row-reverse rounded-lg px-4 pr-2 bg-[#f4e7e9] dark:bg-primary/20 text-[#1c0d10] dark:text-[#fcf8f9] text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-transform hover:scale-105"
                                                 id="Open-1">
                                                 <span class="material-symbols-outlined">open_in_full</span>
@@ -218,18 +218,22 @@
             window.location.href = "tests.html";
         });
 
+        // Open and Download handled by HTML anchor tags
+        /*
         document.getElementById("Open-1")?.addEventListener("click", () => {
             // open full PNG in a new tab (change path if needed)
             window.open("ASSIGNMENT.PNG", "_blank");
         });
         document.getElementById("Download-1")?.addEventListener("click", () => {
             const a = document.createElement('a');
-            a.href = "Test questions.PNG";
+            a.href = "media_files/Assignment_Questions.png"; // Updated to match the href in the HTML
             a.download = "Test-Question-1.PNG";
             document.body.appendChild(a);
             a.click();
             a.remove();
         });
+        */
+
         // Set your real deadlines here:
         const examDate = new Date("2026-01-15");
         const projectDate = new Date("2025-12-12");
