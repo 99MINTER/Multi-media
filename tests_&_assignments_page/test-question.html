@@ -213,18 +213,7 @@
         function Viewanswers() {
             window.location.href = "viewTestanswers.html";
         }
-        // Set your real deadlines here:
-        const examDate = new Date("2026-01-15");
-        const projectDate = new Date("2025-12-12");
-
-        const updateDue = (date) => {
-            const today = new Date();
-            const diff = Math.ceil((date - today) / (1000 * 60 * 60 * 24));
-            return diff > 0 ? `Due in ${diff} days` : "Deadline passed";
-        };
-
-        document.getElementById("examDue").textContent = updateDue(examDate);
-        document.getElementById("projectDue").textContent = updateDue(projectDate);
+        // Date logic moved to script.js
     </script>
     <a href="Multimedia-answers-to-tests-questions.docx"></a>
 </body>

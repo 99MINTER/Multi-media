@@ -218,34 +218,8 @@
             window.location.href = "tests.html";
         });
 
-        // Open and Download handled by HTML anchor tags
-        /*
-        document.getElementById("Open-1")?.addEventListener("click", () => {
-            // open full PNG in a new tab (change path if needed)
-            window.open("ASSIGNMENT.PNG", "_blank");
-        });
-        document.getElementById("Download-1")?.addEventListener("click", () => {
-            const a = document.createElement('a');
-            a.href = "media_files/Assignment_Questions.png"; // Updated to match the href in the HTML
-            a.download = "Test-Question-1.PNG";
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-        });
-        */
 
-        // Set your real deadlines here:
-        const examDate = new Date("2026-01-15");
-        const projectDate = new Date("2025-12-12");
-
-        const updateDue = (date) => {
-            const today = new Date();
-            const diff = Math.ceil((date - today) / (1000 * 60 * 60 * 24));
-            return diff > 0 ? `Due in ${diff} days` : "Deadline passed";
-        };
-
-        document.getElementById("examDue").textContent = updateDue(examDate);
-        document.getElementById("projectDue").textContent = updateDue(projectDate);
+        // Date logic moved to script.js
 
         const ViewAssignmentAnswers = document.getElementById("view-answers").addEventListener("click", () => {
             const AssignmentAnswers = document.getElementById("Assignment-answers");
